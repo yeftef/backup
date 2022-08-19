@@ -20,7 +20,7 @@ jobs:
            git config --global user.name ${{ env.GITHUB_USERNAME }}
            git config --global user.email ${{ secrets.GIT_EMAIL }}
            git config --global credential.helper store
-           echo "https://${{ env.GITHUB_USERNAME }}:${{ secrets.GITHUB_TOKEN }}@github.com" > ~/.git-credentials
+           echo "https://${{ env.GITHUB_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com" > ~/.git-credentials
        - name: Installation
          run: bash installer.sh
        - name: Run
@@ -36,4 +36,4 @@ jobs:
          run: |
            git add videos.txt
            git commit -m "Auto Commit"
-           git push -q https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY} HEAD:main
+           git push -q https://${{ secrets.GIT_TOKEN }}@github.com/${GITHUB_REPOSITORY} HEAD:main
