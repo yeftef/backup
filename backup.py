@@ -19,7 +19,7 @@ from yt_dlp import YoutubeDL
 API_ID = config("API_ID", default=6, cast=int)
 API_HASH = config("API_HASH", default="eb06d4abfb49dc3eeb1aeb98ae0f581e", cast=str)
 BOT_TOKEN = config("BOT_TOKEN", default="", cast=str)
-TG_CHANNEL_ID = config("TG_CHANNEL_ID", default="-1001642739718", cast=int)
+TG_CHANNEL_ID = config("TG_CHANNEL_ID", default="", cast=int)
 YT_CHANNEL_LINK = config("YT_CHANNEL_LINK", default="", cast=str)
 
 # - - - - - - - - - - Constants - - - - - - - - - -
