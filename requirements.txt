@@ -1,0 +1,5 @@
+pyrogram==2.0.0
+python-decouple
+tgcrypto
+youtube-search-python
+yt-dlp
