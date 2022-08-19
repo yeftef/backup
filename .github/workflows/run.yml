@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 */6 * * *'
 env:
-  GITHUB_USERNAME: buddhhu
+  GITHUB_USERNAME: yeftef
 jobs:
   build:
     runs-on: ubuntu-latest
